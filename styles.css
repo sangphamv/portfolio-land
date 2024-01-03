@@ -69,6 +69,7 @@ img {
     top: 0;
     left: auto;
     background-color: var(--background-color);
+    z-index: 1;
 }
 
 .header-logo {
@@ -113,6 +114,8 @@ img {
     height: auto;
     padding: auto;
     margin: auto;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+
 }
 
 .fw_700 {
@@ -181,6 +184,8 @@ img {
     margin: auto;
     width: 400px;
     height: auto;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+
 }
 
 .about-section>div>h4 {
@@ -191,6 +196,7 @@ img {
 .about-section>div>p {
     font-size: 1.6rem;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .about-section>div>table {
@@ -217,11 +223,12 @@ img {
 /* *************************************************************** */
 .service-section {
     width: 100%;
-    height: 130vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 82px;
 }
 
 .service-section>h3 {
@@ -282,7 +289,6 @@ img {
         top: 0px;
         left: 0px;
     }
-
     to {
         top: -10px;
         left: 0px;
@@ -292,12 +298,11 @@ img {
 /* *************************************************************** */
 .portfolio-section {
     width: 100%;
-    height: 150vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 82px;
 }
 
 .portfolio-section>h3 {
@@ -309,6 +314,10 @@ img {
 .portfolio-section>h3>span {
     font-size: 3rem;
     color: var(--text-color-af);
+}
+
+.portfolio-section>div{
+    padding: 20px 0;
 }
 
 .portfolio-section-button {
@@ -338,8 +347,18 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
+.portfolio-section-grid-item {
+    width: 360px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 .portfolio-section-grid-item>img {
     width: 360px;
     height: 290px;
@@ -352,12 +371,12 @@ img {
 }
 
 @keyframes mybkg {
-    from {
-        background-color: transparent;
-    }
+    0%{
+        /* filter: brightness(0) saturate(100%) invert(54%) sepia(66%) saturate(5776%) hue-rotate(330deg) brightness(104%) contrast(101%); */
 
-    to {
-        background-color: #ff0000;
+    }
+    100%{   
+        filter: brightness(0) saturate(100%) invert(54%) sepia(66%) saturate(5776%) hue-rotate(330deg) brightness(104%) contrast(101%);
     }
 }
 
@@ -395,7 +414,7 @@ img {
 }
 
 .blog-section-content-item {
-    box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     width: 30%;
 }
 
@@ -535,13 +554,16 @@ a:hover {
 }
 
 .button>button {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
     border-radius: 5px;
     width: 15%;
     border: none;
     outline: none;
     height: 100%;
     background-color: #ff4a57;
-    box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
 }
 
