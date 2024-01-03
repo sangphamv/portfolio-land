@@ -258,12 +258,13 @@ img {
     border: solid 1px #fff;
 }
 
-.service-section-grid-item>i {
+.service-section-grid-item > i {
     padding: 20px;
     border: solid 1px var(--text-color-af);
     font-size: 18px;
     color: var(--text-color-af);
     margin-bottom: 15px;
+    transition: all .5s;
 }
 
 .service-section-grid-item>h4 {
@@ -277,11 +278,15 @@ img {
 }
 
 .service-section-grid-item:hover {
+    cursor: pointer;
     position: relative;
     animation: mymove;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
 
+.service-section-grid-item:hover i{
+    font-size: 30px;
 }
 
 @keyframes mymove {
