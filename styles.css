@@ -222,22 +222,25 @@ img {
 
 /* *************************************************************** */
 .service-section {
+    padding-top: 90px;
     width: 100%;
     height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding-top: 82px;
 }
 
-.service-section>h3 {
+.service-section > div  > h3 {
+    text-align: center;
     font-size: 3rem;
-    border-bottom: solid 1px var(--text-color-af);
+}
+
+.service-section > div:first-child {
     margin-bottom: 50px;
 }
 
-.service-section>h3>span {
+.service-section > div > h3 > span {
     font-size: 3rem;
     color: var(--text-color-af);
 }
@@ -287,6 +290,8 @@ img {
 
 .service-section-grid-item:hover i{
     font-size: 30px;
+    background-color: #ff4a57;
+    color: #ffffff;
 }
 
 @keyframes mymove {
@@ -310,19 +315,21 @@ img {
     align-items: center;
 }
 
-.portfolio-section>h3 {
+.portfolio-section > div > h3 {
     font-size: 3rem;
-    border-bottom: solid 1px var(--text-color-af);
-    margin-bottom: 50px;
 }
 
-.portfolio-section>h3>span {
+.portfolio-section > div > h3 > span {
     font-size: 3rem;
     color: var(--text-color-af);
 }
 
-.portfolio-section>div{
+.portfolio-section > div{
     padding: 20px 0;
+}
+
+.portfolio-section > div:first-child{
+    margin-bottom: 50px;
 }
 
 .portfolio-section-button {
